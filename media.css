@@ -1,0 +1,528 @@
+@media (max-width:1200px) {
+    .logoname{
+        margin-left: 30px;
+    }
+    nav ul{
+        margin-right: 30px;
+    }    
+    .outer_counter{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .portfolio_gallery_main{
+        width: 90%;
+    }
+    .port_img{
+    height: 220px;
+    }
+    .port_img .image img{
+        height: 220px;
+    }
+    .hover_text{
+        height: 220px;
+    }
+    form{
+        width: 55%;
+    }
+}
+
+
+
+
+@media (max-width:1160px) {
+    .logoname{
+        margin-left: 20px;
+    }
+    .about_heading h1{
+        font-size: 38px;
+    }
+    .about_heading h1::after{
+        width: 110px;
+    }
+    .about_pic{
+        width: 30%;
+    }
+    .about_pic img{
+        width: 350px;
+    }
+    .animated{
+        width: 370px;
+        height: 370px;
+    }
+    .detail_intro{
+        line-height: 22px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .education_info{
+        width: 60%;
+        height: 220px;
+        display: block;
+    }
+    .left-education{
+        width: 100%;
+    }
+    .right-education{
+        width: 100%;
+    }
+    .skills_heading h1{
+        font-size: 38px;
+    }
+    .skills_heading h1::after{
+        width: 80px;
+    }
+    .resume_head h1{
+        font-size: 38px;
+    }
+    .resume_head h1::after{
+        width: 90px;
+    }
+    .btn{
+        width: 40%;
+        float: left;
+    }
+    .btn a{
+        font-size: 18px;
+        padding: 20px 25px;
+    }
+    .social_icons{
+        float: right;
+        width: 50%;
+        margin-top: 50px;
+    }  
+    .portfolio_heading h1{
+        font-size: 38px;
+    }
+    .portfolio_heading h1{
+        font-size: 38px;
+    }
+    .portfolio_heading h1::after{
+        width: 100px;
+    }      
+    .portfolio_gallery_main{
+        width: 80%;
+    }
+    .port_img{
+        width: 48%;
+        height: 250px;
+    }
+    .port_img .image img{
+        height: 250px;
+    }
+    .hover_text{
+        height: 250px;
+    }
+    .contact_heading h1{
+        font-size: 36px;
+    }
+    .contact_heading h1::after{
+        width: 130px;
+    }
+}
+
+
+
+
+@media (max-width:1024px) {
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 0;
+        background: white;
+        top: 80px;
+        text-align: center;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+    nav ul li {
+        display: block;
+        margin: 15px;
+        line-height: 40px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul.nav-active{
+        height: 100vh;
+    }
+    .about .abdiv{
+        margin: 0 auto;
+        display: block;
+    }
+    .about_pic{
+        width: 100%;
+    }
+    .about_desc{
+        width: 97%;
+        margin: 40px auto 0 auto;
+    }
+    .about_desc .name{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .education_info{
+        width: 100%;
+        height: 100px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .left-education{
+        width: 55%;
+    }
+    .right-education{
+        width: 45%;
+    }
+
+    .outer_counter{
+        padding-top: 60px;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .outer_counter .container{
+        margin-top: 10px;
+        width: 32%;
+    }
+    .social_icons{
+        margin-top: 65px;
+    }
+    .outer_counter .container:hover{
+        color: white;
+        background-color: rgba(255, 68, 0, 0.507);
+        transform: scale(1.1);
+    }    
+    .skills_type{
+        width: 100%;
+    }
+    .skills_desc{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .portfolio_gallery_main{
+        width: 90%;
+    }
+    .port_img{
+        width: 45%;
+        height: 210px;
+    }
+    .port_img .image img{
+        height: 210px;
+    }
+    .hover_text{
+        height: 210px;
+    }
+    form{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+@media (max-width:768px) {   
+    .about_pic img{
+        width: 260px;
+    }
+    .animated{
+        position: absolute;
+        width: 280px;
+        height: 280px;
+    }
+    .about_desc{
+        width: 100%;
+        margin: 40px auto 0 auto;
+    }
+    .left-education{
+        width: 50%;
+    }
+    .right-education{
+        width: 50%;
+    }
+    .btn a{
+        padding: 20px 25px;
+    }
+    .social_icons{
+        margin-top: 55px;
+    }
+    .outer_counter{
+        margin-top: 0px;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    .outer_counter .container{
+        width: 80%;
+    }    
+    .skills_desc{
+        width: 90%;
+    }
+    .div_4{
+        width: 100%;
+        display: block;
+    }
+    .skills_type{
+        width: 80%;
+        margin: 50px auto 0px auto;
+    }
+    .port_img{
+        width: 70%;
+        height: 280px;
+    }
+    .port_img .image img{
+        height: 280px;
+    }
+    .hover_text{
+        height: 280px;
+    }
+    form{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:663px) { 
+    .about .abdiv{
+        width: 90%;
+        max-width: 1650px;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-around;
+    }
+    .about_desc{
+        width: 100%;
+    }
+    .detail_intro{
+        font-size: 16px;
+    }
+    .education_info{
+        width: 90%;
+        margin: 50px auto 0px auto;
+        display: block;
+        height: 100%;
+    }
+    .left-education{
+        width: 100%;
+    }
+    .right-education{
+        width: 100%;
+    }
+    .btn{   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .social_icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+    }   
+    .div_4{
+        width: 100%;
+        display: block;
+    }
+    .skills_type{
+        width: 90%;
+        margin: 50px auto 0px auto;
+    } 
+    .port_img{
+        width: 90%;
+        height: 260px;
+    }
+    .port_img .image img{
+        height: 260px;
+    }
+    .hover_text{
+        height: 260px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:560px) {
+    .pic_description .name{
+        font-size: 26px;
+    }
+    .about_desc .name {
+        font-size: 17px;
+    }
+    .about_desc .name span{
+        font-size: 18px;
+    }
+    .social_icons{
+        gap: 10px;
+    } 
+    .outer_counter{
+        width: 80%;
+        margin:70px auto 70px auto;
+        flex-wrap: wrap;
+    }
+    .outer_counter .container{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .education_info{
+        width: 100%;
+    }
+    .port_img{
+        width: 80%;
+        height: 210px;
+    }
+    .port_img .image img{
+        height: 210px;
+    }
+    .hover_text{
+        height: 210px;
+    }
+    
+.footer_main{ 
+    font-size:12px ;
+}
+.footer_main p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:435px) {
+    nav{
+        height:80px;
+        width: 100%;
+    }
+    .mmalogo{
+        width: 70px;
+        height: 50px;
+    }
+    .logoname label{
+        display: none;
+    }
+    .home_information{
+        top: 26%;
+    }
+    .mypic{
+        width: 190px;
+    }
+    .animate{
+        width: 205px;
+        height: 205px;
+        top: -8px;
+        left: -7px;
+    }
+    .pic_description{
+        margin-top: 40px;
+    }
+    .pic_description .name{
+        font-size: 22px;
+    }
+    .pic_description .prof {
+        font-size: 18px;
+    }
+    .about{
+        width: 100%;
+    }
+    .about_pic img{
+        width: 185px;
+    }
+    .animated{
+        width: 200px;
+        height: 200px;
+    }
+    .about_desc{
+        width: 100%;
+        top: 200px;
+    }
+    .about_desc .name{
+        display: none;
+    }
+    .detail_intro{
+        line-height: 24px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .btn{
+        width: 100%;
+    }
+    .btn a{
+        font-size: 18px;
+        padding: 20px 25px;
+    }
+    .social_icons{
+        width: 100%;
+        margin-top: 30px;
+        
+    } 
+    .outer_counter{
+        margin:0px auto 70px auto;
+        
+    }
+    .port_img{
+        width: 90%;
+        height: 210px;
+    }
+    .port_img .image img{
+        height: 210px;
+    }
+    .hover_text{
+        height: 210px;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width:375px) {
+    .port_img{
+        width: 90%;
+        height: 160px;
+    }
+    .port_img .image img{
+        height: 160px;
+    }
+    .hover_text{
+        height: 160px;
+    }
+ 
+}
+
+
+
+
+
+
+
+
+

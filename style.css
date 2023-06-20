@@ -1,0 +1,1220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: orangered;
+    color: white;
+}
+.Scrolltop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(182, 63, 19, 0.491);
+    z-index: 99;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease;
+    transform: translateY(-800px);
+}
+.Scrolltop.active{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+.Scrolltop i{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 900;
+    font-size: 25px;
+    color: orangered;
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    filter: brightness(0.5);
+}
+.bx-x{
+    color: orangered;
+    font-size: 36px;
+}
+body{
+    max-width: 1650px;
+    margin: 0 auto;
+}
+body::-webkit-scrollbar{
+    width: 12px;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgb(96, 39, 0);
+}
+body::-webkit-scrollbar-thumb{
+    height: 5px;
+    border-radius: 10px;
+    background-color: orangered;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgba(12, 18, 24, 0.904);
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+.logoname{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.mmalogo{
+    width: 70px;
+    height: 50px;
+}
+label{
+    font-size: 20px;
+    font-weight: 900;
+    padding-left: 10px;
+    height: 100%;
+    color: white;
+    line-height: 80px;
+}
+label .anjum{
+    color: rgb(255, 38, 0);
+}
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+nav li{
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 20px;
+}
+nav ul li a{
+    color: orangered;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    margin: 0 auto;
+    height: 2px;
+    background: orangered;
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a.active::after{
+    width:100%;
+}
+nav #icon{
+    color: orangered;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+/* NAVBAR END ===================================================================================*/
+.home_information{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+    color: white;
+}
+.mypic{
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+.mypic img{
+    border: 2px solid orangered;
+    width: 100%;
+    border-radius: 50%;
+}
+.animate{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: -15px;
+    left: -15px;
+    border-top:3px solid orangered;
+    border-bottom: 3px solid white;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+.pic_description{
+    margin-top: 30px;
+    text-align: center;
+}
+.pic_description .name{
+    font-size: 30px;
+    font-weight: 900;
+    color: orangered;
+}
+.pic_description .prof {
+    color: orangered;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top:0px;    
+}
+.pic_description .prof span{
+    color: white;
+}
+.about_main{
+    margin-top: -5px;
+    padding: 0;
+    background-image: url(aboutc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.about_heading h1{
+    width: 100%;
+    text-align: center;
+    padding: 80px 0px 50px 0px;
+    font-size: 45px;
+    font-weight: 900;
+}
+.about_heading h1::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: orangered;
+}
+.about .abdiv{
+    width: 90%;
+    max-width: 1650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.about_pic{
+    width: 36%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_pic img{
+    width: 400px;
+    border-radius: 50%;
+}
+.animated{
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    border-top:3px solid orangered;
+    border-bottom: 3px solid white;
+    transition: 0.5s;
+    border-radius: 50%;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }   
+}
+.about_desc{
+    width: 55%;
+}
+.about_desc .name{
+    font-size: 22px;
+}
+.name span{
+    color: orangered;
+    font-weight: 900;
+}
+.detail_intro{
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.education_info{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.left-education{
+    width: 55%;
+}
+.right-education{
+    width: 45%;
+}
+.bx-chevron-right{
+    color: orangered;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    line-height: 40px;
+}
+.iconques{
+    color: orangered;
+    font-size: 16px;
+    font-weight: bold;
+}
+.iconans{
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 6px;
+}
+.btn{  
+    margin-top: 70px;
+    width: 40%;
+    float: left;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 3px solid orangered;
+    color: white;
+    transition: 0.5s ease;
+}
+.btn a:hover{
+    background-color: orangered;
+    color: white;
+}
+.social_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 18px; 
+    width: 55%;
+    gap: 20px;
+}
+.social_icons a{
+    border: 3px solid orangered;
+    transition: 0.5s ease;
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+.social_icons a:hover{
+    background-color: orangered;
+}
+.social_icons i{
+    color: orangered;
+}
+
+.social_icons a:hover i{
+    color: white;
+}
+.outer_counter{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.outer_counter .container{
+    z-index: 3;
+    color: orangered;
+    width: 270px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 20px;
+    border: 1px solid orangered;
+    border-bottom: 4px solid orangered;
+    margin-top: 100px;
+    transition: 0.5s ease;
+}
+.outer_counter .container:hover{
+    color: white;
+    background-color: rgba(255, 68, 0, 0.507);
+    transform: scale(1.1);
+}
+.container i{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.num{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+}
+.plus{
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+}
+span.text{
+    padding-top: 10px;    
+    font-size: 18px;
+    color: rgb(227, 227, 227);
+}
+.skills_heading h1{
+    width: 100%;
+    text-align: center;
+    padding: 70px 0px 70px 0px;
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+}
+.skills_heading h1::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: orangered;
+}
+.skills_desc{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: orangered;
+}
+.div_4{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: orangered;
+}
+.skills_type{
+    width: 28%;
+}
+.skills_type h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 6px 0px 20px 0;
+}
+.skillbars{
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
+.skillbars_text{
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    color: white;
+    justify-content: space-between;
+}
+.skillbars_bar{
+    width: 100%;
+    height: 8px;
+    margin-top: 10px;
+    position: relative;
+}
+.bgbar{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.uperbar{
+    position: absolute;
+    background-color: rgb(255, 68, 0);
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+}
+.bs{
+    width: 75%;
+}
+.js{
+    width: 85%;
+}
+.wbs{
+    width: 80%;
+}
+.sql{
+    width: 95%;
+}
+.ai{
+    width: 85%;
+}
+.fig{
+    width: 80%;
+}
+.canv{
+    width: 90%;
+}
+.resume_main{
+    width: 100%;
+    padding: 30px 0px;
+}
+.resume_head h1{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+.resume_head h1::after{
+    content: '';
+    display: block;
+    width: 110px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: orangered;
+}
+.resume_main .btn{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.resume_main .btn a{ 
+    padding: 20px 30px;
+ }
+
+.portfolio_main{
+    margin-top: 40px;
+}
+.portfolio_heading h1{
+    width: 100%;
+    text-align: center;
+    padding: 80px 0px 30px 0px;
+    font-size: 45px;
+    font-weight: 900;
+}
+.portfolio_heading h1::after{
+    content: '';
+    display: block;
+    width: 140px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: orangered;
+}
+.portfolio_gallery_main{
+    width: 80%;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 auto;
+}
+.port_img{
+    width: 31%;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+.port_img:hover .image{
+    filter: blur(5px);
+}
+.image{
+    width: 100%;
+    position: absolute;
+}
+.port_img .image img{
+    width: 100%;
+    border-radius: 8px;
+    height: 230px;
+}
+.hover_text{
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    color: white;
+    background-color: rgba(255, 68, 0, 0.699);
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.3s ease-in-out;
+}
+.hover_text .text{
+    width: 80%;
+    margin: 50px auto;
+}
+.hover_text .text i{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.text h2 , p{
+    padding-bottom: 20px;
+}
+.port_img:hover .hover_text{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.form_main{
+    width: 100%;
+    margin-top: 60px;
+}
+.contact_heading h1{
+    width: 100%;
+    text-align: center;
+    padding: 70px 0px 20px 0px;
+    font-size: 45px;
+    font-weight: 900;
+}
+.contact_heading h1::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: orangered;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+.inputs_main{
+    padding: 20px 0;
+}
+input{
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius:6px;
+    background: rgba(255, 166, 0, 0.112) ;
+    border-bottom: 3px solid rgb(255, 68, 0);
+    font-size: 18px;
+    color: white;
+    margin: 20px 0px;
+}
+
+input::placeholder{
+    color: rgb(255, 68, 0);
+}
+textarea{
+    padding: 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius:6px;
+    background: rgba(255, 166, 0, 0.112);
+    border-bottom: 3px solid rgb(255, 68, 0);
+    font-size: 18px;
+    color: white;
+    margin: 20px 0px;
+    height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 230px;
+}
+textarea::placeholder{
+    color: rgb(255, 68, 0);
+}
+.submit{
+    padding: 12px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    color: orangered;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+.submit:hover{
+    color: white;
+    background-color: orangered;
+}
+
+.footer_main{
+    width: 100%;
+    height: 120px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgba(255, 68, 0, 0.701);
+}
+.footer_main p{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .logoname{
+        margin-left: 30px;
+    }
+    nav ul{
+        margin-right: 30px;
+    }    
+    .outer_counter{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .portfolio_gallery_main{
+        width: 90%;
+    }
+    .port_img{
+    height: 220px;
+    }
+    .port_img .image img{
+        height: 220px;
+    }
+    .hover_text{
+        height: 220px;
+    }
+    form{
+        width: 55%;
+    }
+}
+
+
+
+
+@media (max-width:1160px) {
+    .logoname{
+        margin-left: 20px;
+    }
+    .about_heading h1{
+        font-size: 38px;
+    }
+    .about_heading h1::after{
+        width: 110px;
+    }
+    .about_pic{
+        width: 30%;
+    }
+    .about_pic img{
+        width: 350px;
+    }
+    .animated{
+        width: 370px;
+        height: 370px;
+    }
+    .detail_intro{
+        line-height: 22px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .education_info{
+        width: 60%;
+        height: 220px;
+        display: block;
+    }
+    .left-education{
+        width: 100%;
+    }
+    .right-education{
+        width: 100%;
+    }
+    .skills_heading h1{
+        font-size: 38px;
+    }
+    .skills_heading h1::after{
+        width: 80px;
+    }
+    .resume_head h1{
+        font-size: 38px;
+    }
+    .resume_head h1::after{
+        width: 90px;
+    }
+    .btn{
+        width: 40%;
+        float: left;
+    }
+    .btn a{
+        font-size: 18px;
+        padding: 20px 25px;
+    }
+    .social_icons{
+        float: right;
+        width: 50%;
+        margin-top: 50px;
+    }  
+    .portfolio_heading h1{
+        font-size: 38px;
+    }
+    .portfolio_heading h1{
+        font-size: 38px;
+    }
+    .portfolio_heading h1::after{
+        width: 100px;
+    }      
+    .portfolio_gallery_main{
+        width: 80%;
+    }
+    .port_img{
+        width: 48%;
+        height: 250px;
+    }
+    .port_img .image img{
+        height: 250px;
+    }
+    .hover_text{
+        height: 250px;
+    }
+    .contact_heading h1{
+        font-size: 36px;
+    }
+    .contact_heading h1::after{
+        width: 130px;
+    }
+}
+
+
+
+
+@media (max-width:1024px) {
+    nav #icon{
+        display: block;
+     }
+     nav ul{
+        position: fixed;
+        width: 100%;
+        height: 0;
+        background: white;
+        top: 80px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li{
+        line-height: 55px;
+    }
+    nav ul.nav-active{
+        height: 100vh;
+    }
+    .about .abdiv{
+        margin: 0 auto;
+        display: block;
+    }
+    .about_pic{
+        width: 100%;
+    }
+    .about_desc{
+        width: 97%;
+        margin: 40px auto 0 auto;
+    }
+    .about_desc .name{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .education_info{
+        width: 100%;
+        height: 100px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .left-education{
+        width: 55%;
+    }
+    .right-education{
+        width: 45%;
+    }
+
+    .outer_counter{
+        padding-top: 60px;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .outer_counter .container{
+        margin-top: 10px;
+        width: 32%;
+    }
+    .social_icons{
+        margin-top: 65px;
+    }
+    .outer_counter .container:hover{
+        color: white;
+        background-color: rgba(255, 68, 0, 0.507);
+        transform: scale(1.1);
+    }    
+    .skills_type{
+        width: 100%;
+    }
+    .skills_desc{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .portfolio_gallery_main{
+        width: 90%;
+    }
+    .port_img{
+        width: 45%;
+        height: 210px;
+    }
+    .port_img .image img{
+        height: 210px;
+    }
+    .hover_text{
+        height: 210px;
+    }
+    form{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+@media (max-width:768px) {   
+    .about_pic img{
+        width: 260px;
+    }
+    .animated{
+        position: absolute;
+        width: 280px;
+        height: 280px;
+    }
+    .about_desc{
+        width: 100%;
+        margin: 40px auto 0 auto;
+    }
+    .left-education{
+        width: 50%;
+    }
+    .right-education{
+        width: 50%;
+    }
+    .btn a{
+        padding: 20px 25px;
+    }
+    .social_icons{
+        margin-top: 55px;
+    }
+    .outer_counter{
+        margin-top: 0px;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    .outer_counter .container{
+        width: 80%;
+    }    
+    .skills_desc{
+        width: 90%;
+    }
+    .div_4{
+        width: 100%;
+        display: block;
+    }
+    .skills_type{
+        width: 80%;
+        margin: 50px auto 0px auto;
+    }
+    .port_img{
+        width: 70%;
+        height: 280px;
+    }
+    .port_img .image img{
+        height: 280px;
+    }
+    .hover_text{
+        height: 280px;
+    }
+    form{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:663px) { 
+    .about .abdiv{
+        width: 90%;
+        max-width: 1650px;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-around;
+    }
+    .about_desc{
+        width: 100%;
+    }
+    .detail_intro{
+        font-size: 16px;
+    }
+    .education_info{
+        width: 90%;
+        margin: 50px auto 0px auto;
+        display: block;
+        height: 100%;
+    }
+    .left-education{
+        width: 100%;
+    }
+    .right-education{
+        width: 100%;
+    }
+    .btn{   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .social_icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+    }   
+    .div_4{
+        width: 100%;
+        display: block;
+    }
+    .skills_type{
+        width: 90%;
+        margin: 50px auto 0px auto;
+    } 
+    .port_img{
+        width: 90%;
+        height: 260px;
+    }
+    .port_img .image img{
+        height: 260px;
+    }
+    .hover_text{
+        height: 260px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:560px) {
+    .pic_description .name{
+        font-size: 26px;
+    }
+    .about_desc .name {
+        font-size: 17px;
+    }
+    .about_desc .name span{
+        font-size: 18px;
+    }
+    .social_icons{
+        gap: 10px;
+    } 
+    .outer_counter{
+        width: 80%;
+        margin:70px auto 70px auto;
+        flex-wrap: wrap;
+    }
+    .outer_counter .container{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .education_info{
+        width: 100%;
+    }
+    .port_img{
+        width: 80%;
+        height: 210px;
+    }
+    .port_img .image img{
+        height: 210px;
+    }
+    .hover_text{
+        height: 210px;
+    }
+    
+.footer_main{ 
+    font-size:12px ;
+}
+.footer_main p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:435px) {
+    nav{
+        height:80px;
+        width: 100%;
+    }
+    .mmalogo{
+        width: 70px;
+        height: 50px;
+    }
+    .logoname label{
+        display: none;
+    }
+    .home_information{
+        top: 26%;
+    }
+    .mypic{
+        width: 190px;
+    }
+    .animate{
+        width: 205px;
+        height: 205px;
+        top: -8px;
+        left: -7px;
+    }
+    .pic_description{
+        margin-top: 40px;
+    }
+    .pic_description .name{
+        font-size: 22px;
+    }
+    .pic_description .prof {
+        font-size: 18px;
+    }
+    .about{
+        width: 100%;
+    }
+    .about_pic img{
+        width: 185px;
+    }
+    .animated{
+        width: 200px;
+        height: 200px;
+    }
+    .about_desc{
+        width: 100%;
+        top: 200px;
+    }
+    .about_desc .name{
+        display: none;
+    }
+    .detail_intro{
+        line-height: 24px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .btn{
+        width: 100%;
+    }
+    .btn a{
+        font-size: 18px;
+        padding: 20px 25px;
+    }
+    .social_icons{
+        width: 100%;
+        margin-top: 30px;
+        
+    } 
+    .outer_counter{
+        margin:0px auto 70px auto;
+        
+    }
+    .port_img{
+        width: 90%;
+        height: 210px;
+    }
+    .port_img .image img{
+        height: 210px;
+    }
+    .hover_text{
+        height: 210px;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width:375px) {
+    .port_img{
+        width: 90%;
+        height: 160px;
+    }
+    .port_img .image img{
+        height: 160px;
+    }
+    .hover_text{
+        height: 160px;
+    }
+ 
+}
+
+
+
+
+
+
+
+
+
